@@ -2,12 +2,14 @@
 <html>
 <body>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+
 
 
 <header>
 <div class="navigation"><a href="">About Me</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
 </header>
-<div class=about>Hi! I'm Khanh and my goal is to craft inspirational content and experiences. I have background in shipping products, marketing to small communities of users, and a knack for making .gifs. </div>
+<div id="about"><font>Hi! I'm Khanh and my goal is to craft inspirational content and experiences. I have background in shipping products, marketing to small communities of users, and a knack for making .gifs. </font></div>
 
 <div class="contact"> 
 Let's collaborate, grab boba, or chat about:<br>
@@ -67,13 +69,21 @@ header{
 
 /**Content**/
 
-.about{
+#about{
 	padding-left: 200px;
 	padding-right: 200px;
 	padding-bottom: 200px;
 	padding-top: 200px;
 	margin: 0 auto;
 	display: inline-block;
+}
+
+#about .font{
+	font-size:40px;
+	word-spacing: 15px;
+	text-align:center;
+	font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 .contact{
