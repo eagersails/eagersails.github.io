@@ -1,5 +1,9 @@
 <!doctype html/css>
 <html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
 <body>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
@@ -7,7 +11,7 @@
 
 
 <header>
-<div class="navigation"><a href="">About</a> <a href="">Visuals</a> <a href="">Photo</a> <a href="">Product</a> </div>
+<div class="navigation"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
 </header>
 
 <div id="about"><p>Hi! I'm <a href="">Khanh</a> and my goal is to craft inspirational content and experiences. I have background in shipping <a href="">products</a>, marketing to small communities of users, and a knack for making <a href="">.gifs</a>. </p></div>
@@ -72,12 +76,11 @@ header{
 
 .sticky {
   position: fixed;
+  width: 100%;
+  left: 0;
   top: 0;
-  width: 100%
-}
-
-.sticky + #about {
-  padding-top: 60px;
+  z-index: 100;
+  border-top: 0;
 }
 
 /**Content**/
@@ -121,15 +124,24 @@ header{
 
 </style>
 
-<script>
-var navigation = document.getElementById("navigation");
-var sticky = navigation.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navigation.classList.add("sticky")
-  } else {
-    navigation.classList.remove("sticky");
-  }
+<script type="text/javascript">
+$(document).ready(function() {
+var stickyNavTop = $('.navigation').offset().top;
+ 
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop();
+      
+if (scrollTop > stickyNavTop) { 
+    $('.navigation').addClass('sticky');
+} else {
+    $('.navigation').removeClass('sticky'); 
 }
-</script>
+};
+ 
+stickyNav();
+ 
+$(window).scroll(function() {
+  stickyNav();
+});
+});
+</script> 
