@@ -10,20 +10,19 @@
   <script type="text/javascript" src="jquery.sticky.js"></script>
 <script>
   $(document).ready(function(){
-    $("#navigation").sticky({topSpacing:0});
+    $(".header").sticky({topSpacing:0});
   });
 
-  $('#navigation').on('sticky-start', function() { console.log("Started"); });
-  $('#navigation').on('sticky-end', function() { console.log("Ended"); });
-  $('#navigation').on('sticky-update', function() { console.log("Update"); });
-  $('#navigation').on('sticky-bottom-reached', function() { console.log("Bottom reached"); });
-  $('#navigation').on('sticky-bottom-unreached', function() { console.log("Bottom unreached"); });
+  $('.header').on('sticky-start', function() { console.log("Started"); });
+  $('.header').on('sticky-end', function() { console.log("Ended"); });
+  $('.header').on('sticky-update', function() { console.log("Update"); });
+  $('.header').on('sticky-bottom-reached', function() { console.log("Bottom reached"); });
+  $('.header).on('sticky-bottom-unreached', function() { console.log("Bottom unreached"); });  
 </script>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 
-
-<div id="navigation"><div class="header"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div></div>
+<div class="header"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
 
 
 <div id="about"><p>Hi! I'm <a href="">Khanh</a> and my goal is to craft inspirational content and experiences. I have background in shipping <a href="">products</a>, marketing to small communities of users, and a knack for making <a href="">.gifs</a>. </p></div>
@@ -65,23 +64,18 @@ body {
     height: 65px;
     background-color: #004fce;
   	z-index: 999;
-
-}
-
-.header #navigation
-{
-	font-size:30px;
+  	font-size:30px;
 	word-spacing: 15px;
 	text-align:center;
 	font-family: 'work sans', sans-serif;
 	width: 100%;
-    padding: 20px;
-    margin: 0; 
+    padding: 5px 5px 5px 5px;
+    border: 25px 25px 25px 25px;
+    border-color: #004fce;
     color: #fff;
-; 
 }
-.header #navigation a:link, .navigation a:visited, .navigation a:hover, 
-#navigation a:active
+.header a:link, .navigation a:visited, .navigation a:hover, 
+.header a:active
 {	
 	color: #fff;
 	text-decoration: none;
