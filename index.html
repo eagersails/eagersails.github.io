@@ -1,10 +1,6 @@
 <!doctype html/css>
 <html>
 
-
-
-
-
 <body>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.sticky.js"></script>
@@ -17,8 +13,7 @@
   $('.header').on('sticky-end', function() { console.log("Ended"); });
   $('.header').on('sticky-update', function() { console.log("Update"); });
   $('.header').on('sticky-bottom-reached', function() { console.log("Bottom reached"); });
-  $('.header).on('sticky-bottom-unreached', function() { console.log("Bottom unreached"); });  
-</script>
+  $('.header).on('sticky-bottom-unreached', function() { console.log("Bottom unreached"); }); </script>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 
@@ -74,7 +69,7 @@ body {
     border-color: #004fce;
     color: #fff;
 }
-.header a:link, .navigation a:visited, .navigation a:hover, 
+.header a:link, .header a:visited, .header a:hover, 
 .header a:active {	
 	color: #fff;
 	text-decoration: none;
