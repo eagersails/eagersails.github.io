@@ -8,6 +8,12 @@
   $(document).ready(function(){
     $("#navigation").sticky({topSpacing:0});
   });
+
+  $('#navigation').on('sticky-start', function() { console.log("Started"); });
+  $('#navigation').on('sticky-end', function() { console.log("Ended"); });
+  $('#navigation').on('sticky-update', function() { console.log("Update"); });
+  $('#navigation').on('sticky-bottom-reached', function() { console.log("Bottom reached"); });
+  $('#navigation').on('sticky-bottom-unreached', function() { console.log("Bottom unreached"); });
 </script>
 </head>
 
