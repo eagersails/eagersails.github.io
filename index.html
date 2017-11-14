@@ -6,7 +6,7 @@
   <script type="text/javascript" src="jquery.sticky.js"></script>
 <script>
   $(document).ready(function(){
-    $(".navigation").sticky({topSpacing:0});
+    $("#navigation").sticky({topSpacing:0});
   });
 </script>
 </head>
@@ -18,7 +18,7 @@
 
 
 <header>
-<div class="navigation"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
+<div id="navigation"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
 </header>
 
 <div id="about"><p>Hi! I'm <a href="">Khanh</a> and my goal is to craft inspirational content and experiences. I have background in shipping <a href="">products</a>, marketing to small communities of users, and a knack for making <a href="">.gifs</a>. </p></div>
@@ -62,7 +62,7 @@ header{
 
 }
 
-.navigation
+#navigation
 {
 	font-size:30px;
 	word-spacing: 15px;
@@ -74,7 +74,7 @@ header{
     color: #fff;
 ; 
 }
-.navigation a:link, .navigation a:visited, .navigation a:hover, 
+#navigation a:link, .navigation a:visited, .navigation a:hover, 
 .navigation a:active
 {	
 	color: #fff;
