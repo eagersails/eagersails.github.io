@@ -1,7 +1,11 @@
 <!doctype html/css>
 <html>
-<head>
 
+
+
+
+
+<body>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="jquery.sticky.js"></script>
 <script>
@@ -15,17 +19,12 @@
   $('#navigation').on('sticky-bottom-reached', function() { console.log("Bottom reached"); });
   $('#navigation').on('sticky-bottom-unreached', function() { console.log("Bottom unreached"); });
 </script>
-</head>
-
-<body>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 
 
+<div id="navigation" class="header"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
 
-<header>
-<div id="navigation"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
-</header>
 
 <div id="about"><p>Hi! I'm <a href="">Khanh</a> and my goal is to craft inspirational content and experiences. I have background in shipping <a href="">products</a>, marketing to small communities of users, and a knack for making <a href="">.gifs</a>. </p></div>
 
@@ -60,15 +59,16 @@ body {
  }
 
  /**Header and Navigation**/ 
-header{
+.header{
 	display: inline-block;
     width: 100%;
     height: 65px;
     background-color: #004fce;
+  	z-index: 999;
 
 }
 
-#navigation
+.header #navigation
 {
 	font-size:30px;
 	word-spacing: 15px;
@@ -78,10 +78,9 @@ header{
     padding: 20px;
     margin: 0; 
     color: #fff;
-  	z-index: 999;
 ; 
 }
-#navigation a:link, .navigation a:visited, .navigation a:hover, 
+.header #navigation a:link, .navigation a:visited, .navigation a:hover, 
 #navigation a:active
 {	
 	color: #fff;
