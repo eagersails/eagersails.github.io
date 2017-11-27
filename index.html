@@ -63,6 +63,11 @@ display: block;">
  
 <div class="projects"><img src="eagersails.github.io/Images/illustration 3.png"><img src="Images/illustration 4.png"><img src="Images/illustration 5.png"></div>
 
+<div class="projects"><img src="eagersails.github.io/Images/illustration 3.png"><img src="Images/illustration 4.png"><img src="Images/illustration 5.png"></div>
+
+<div class="projects"><img src="eagersails.github.io/Images/illustration 3.png"><img src="Images/illustration 4.png"><img src="Images/illustration 5.png"></div>
+
+<div class="projects"><img src="eagersails.github.io/Images/illustration 3.png"><img src="Images/illustration 4.png"><img src="Images/illustration 5.png"></div>
 
 </body>
 </html>
@@ -177,6 +182,20 @@ body a{
     content: "";
     display: table;
     clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .projects {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .projects {
+        width: 100%;
+   }
 }
 
 </style>
