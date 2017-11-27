@@ -18,17 +18,7 @@
        else
           e.style.display = 'block';
     }
-    $(function() {
-   $(window).scroll(function () {
-      if ($(this).scrollTop() > 600) {
-         $("#header").removeClass('changeColor')
-      }
-      if ($(this).scrollTop() < 600) {
-         $("#header").addClass('changeColor')
-         
-      }
-   });
-});
+
 </script>
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
@@ -108,6 +98,9 @@ body a{
 
  /**Header and Navigation**/ 
 #header{
+	color: #fff;
+    background-color: #6699cc;;
+    border-color: #6699cc;;
 	display: inline-block;
     width: 100%;
     height: 30px;
@@ -119,28 +112,13 @@ body a{
 	width: 100%;
     padding: 15px 0px 5px 0px;
     border: 25px 25px 25px 25px;
-    color: #6699cc;
-    background-color: #fff;
-    border-color: #fff;
+  
 }
 
 #header a:active, 
 #header a:link, #header a:visited, #header a:hover {	
 	color: #fff;
 	text-decoration: none;
-}
-
-.changeColor {
-   background-color: #6699cc;
-   border-color: #6699cc;
-   transition: 0.3s all;
-   color: #fff;
-   height: 65px;
-   font-size:30px;
-
-
-
-
 }
 
 /**About**/
