@@ -24,7 +24,7 @@
 <div id="header"><a href="">About</a> <a href="">Visual</a> <a href="">Photo</a> <a href="">Product</a> </div>
 
 
-<div id="about"><p>Hi! I'm <a href="">Khanh</a> and my goal is to craft inspirational content and experiences. I have background in shipping <a href="">products</a>, marketing to small communities of users, and a knack for making <a href="">.gifs</a>. </p></div>
+<div id="about"><p>Hi! I'm <a href="">Khanh</a> and my goal is to craft inspirational content and experiences. I have background in shipping <a href="">products</a>, marketing to small communities of users, and a knack for making <a href="http://welldressed.tumblr.com/tagged/my_gifs">.gifs</a>. </p></div>
 
 <div id="contact"> 
 <img src="eagersails.github.io/Images/contactme.png">
@@ -61,7 +61,7 @@ display: block;">
 </div>
 </div> 
  
-<div class="projects"><img src="eagersails.github.io/Images/illustration 3.png"><img src="Images/illustration 4.png"><br><img src="Images/illustration 5.png" align="right"></div>
+<div class="projects"><img src="eagersails.github.io/Images/illustration 3.png"><img src="Images/illustration 4.png"><img src="Images/illustration 5.png"></div>
 
 
 </body>
@@ -160,9 +160,10 @@ body a{
 /**Projects**/
 
 .projects{
-	margin-top: 20px;
-	margin-left: 30px;
-	margin-right: 30px; 
+	margin: 20px 30px 30px;
+    float: left;
+    width: 25%;
+    padding: 10px;
 }
 .projects img{
 	max-width:400px;
@@ -171,6 +172,11 @@ body a{
 	height: auto;
 	padding:20px 20px 20px 20px;
 
+}
+.projects:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 </style>
