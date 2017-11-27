@@ -22,10 +22,11 @@
    $(window).scroll(function () {
       if ($(this).scrollTop() > 600) {
          $("#header").removeClass('changeColor')
+         $("#header").css('color' '#6699cc')
       }
       if ($(this).scrollTop() < 600) {
          $("#header").addClass('changeColor')
-         $("#header").css('color' '#6699cc')
+         
       }
    });
 });
