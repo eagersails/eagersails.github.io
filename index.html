@@ -22,7 +22,6 @@
    $(window).scroll(function () {
       if ($(this).scrollTop() > 600) {
          $("#header").removeClass('changeColor')
-         $("#header").css('color' '#6699cc')
       }
       if ($(this).scrollTop() < 600) {
          $("#header").addClass('changeColor')
@@ -129,9 +128,9 @@ body a{
 #header{
 	display: inline-block;
     width: 100%;
-    height: 65px;
+    height: 30px;
   	z-index: 999;
-  	font-size:30px;
+  	font-size:15px;
 	word-spacing: 15px;
 	text-align:center;
 	font-family: 'work sans', sans-serif;
@@ -139,6 +138,8 @@ body a{
     padding: 15px 0px 5px 0px;
     border: 25px 25px 25px 25px;
     color: #6699cc;
+    background-color: #fff;
+    border-color: #fff;
 }
 
 #header a:active, 
@@ -152,6 +153,9 @@ body a{
    border-color: #6699cc;
    transition: 0.3s all;
    color: #fff;
+   height: 65px;
+   font-size:30px;
+
 
 
 
