@@ -60,28 +60,30 @@ display: block;">
 <a style="display: block;" onclick="toggle_visibility('contact');">Ok</a>
 </div>
 </div> 
-<div class="projectrow">
 
 <div class="projects">
-<img src="Images/illustration 3.png" style="width: 100%">
-<img src="Images/illustration 4.png" style="width: 100%">
-<img src="Images/illustration 5.png" style="width: 100%">
-<img src="Images/imperium.jpg" style="width: 100%">
-<img src="Images/illustration 4.png" style="width: 100%">
-<img src="Images/illustration 5.png" style="width: 100%"></div>
+<img src="Images/illustration 3.png">
+<img src="Images/illustration 4.png">
+<img src="Images/illustration 5.png">
+<img src="Images/imperium.jpg">
+<img src="Images/illustration 4.png">
+<img src="Images/illustration 5.png"></div>
 
 <div class="projects">
-<img src="Images/illustration 3.png" style="width: 100%">
-<img src="Images/illustration 4.png" style="width: 100%">
-<img src="Images/illustration 5.png" style="width: 100%">
-<img src="Images/imperium.jpg" style="width: 100%"></div>
+<img src="Images/illustration 3.png">
+<img src="Images/illustration 4.png">
+<img src="Images/illustration 5.png">
+<img src="Images/imperium.jpg">
+<img src="Images/illustration 4.png">
+<img src="Images/illustration 5.png"></div>
 
 <div class="projects">
-<img src="Images/illustration 3.png" style="width: 100%">
-<img src="Images/illustration 4.png" style="width: 100%">
-<img src="Images/illustration 5.png" style="width: 100%">
-<img src="Images/imperium.jpg" style="width: 100%"></div>
-</div>
+<img src="Images/illustration 3.png">
+<img src="Images/illustration 4.png">
+<img src="Images/illustration 5.png">
+<img src="Images/imperium.jpg">
+<img src="Images/illustration 4.png">
+<img src="Images/illustration 5.png"></div>
 
 </body>
 </html>
@@ -174,23 +176,23 @@ body a{
 /**Projects**/
 
 .projects{
-  	float: left;
-    width: 25%;
-    padding: 10px;
+   line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+
 
 }
 .projects img{
 	max-width: 300px;
-	margin-top: 20px 20px 20px 20px;
+	height: auto;
+	margin-top: 30px 30px 30px 30px;
     padding: 10px 10px 10px 10px;
     border: 2px solid black;
-
-}
-.projectrow:after {
-    content: "";
-    display: table;
-    table-layout: fixed;
-    clear: both;
 }
 
 @media (max-width: 800px) {
