@@ -10,7 +10,7 @@
     });
   </script>
   <script type="text/javascript">
-    function toggle_visibility(id) {
+   $(document).on('ready', function toggle_visibility(id) {
        var e = document.getElementById(id);
        if(e.style.display == 'block')
           e.style.display = 'none';
@@ -56,7 +56,7 @@ left: 250px;
 padding: 5px 5px 5px 5px;
 border: 2px solid black;
 box-shadow: 5px 2px 0px 1px black">
-<element onclick="toggle_visibility('contact');">Ok</a>
+<a onclick="toggle_visibility('contact');">Ok</a>
 </div>
 </div> 
  
