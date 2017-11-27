@@ -61,7 +61,7 @@ display: block;">
 </div>
 </div> 
 
-<div class="projects" style="display:inline-grid;">
+<div class="parallax"><div class="projects" style="display:inline-grid;">
 <img src="Images/illustration 3.png">
 <img src="Images/illustration 4.png">
 <img src="Images/illustration 5.png">
@@ -88,8 +88,9 @@ display: block;">
 <img src="Images/illustration 3.png">
 <img src="Images/illustration 4.png">
 <img src="Images/illustration 5.png">
-<img src="Images/imperium.jpg"></div>
+<img src="Images/imperium.jpg"></div></div>
 
+<p>Laborous and messy code property of me!</p>
 </body>
 </html>
 
@@ -142,6 +143,7 @@ body a{
 	padding-right: 200px;
 	padding-top: 75px;
 	margin: 0 auto;
+	margin-bottom: 100px;
 	display: inline-block;
 }
 
@@ -209,6 +211,23 @@ body a{
         width: 100%;
    }
 }
+
+
+/**Parallax**/
+.parallax { 
+    /* The image used */
+    background-color: #fff;
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 </style>
 
