@@ -52,6 +52,7 @@ Asian pop culture<br>
 	border: 2px solid black;
 	box-shadow: 5px 2px 0px 1px black">
 <a href="">Email!</a></div>
+<div class="left"><a href="#">back to top</a></div>
 
 <div class="contact" style="position: absolute;
 top: 165;
@@ -150,7 +151,7 @@ body a{
 }
 
 #contact{
-	display: block;
+	  display: block;
     position: fixed;
     width: 400px;
     height: auto;
@@ -171,6 +172,8 @@ body a{
 /**Projects**/
 
 .projects{
+  margin-left: auto;
+  margin-right: auto;
 	padding-top: 75px;
 	display: inline-grid;
 	column-width: 340px;
@@ -181,8 +184,8 @@ body a{
 	max-width: 300px;
 	height: auto;
 	margin: 30px 30px 30px 30px;
-    padding: 10px 10px 10px 10px;
-    border: 2px solid black;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid black;
 }
 
 @media (max-width: 800px) {
@@ -197,6 +200,29 @@ body a{
    }
 }
 
+/**Left and Right Nav**/
+
+.left{
+    top: 50%;
+    left: 5%;
+    position: fixed;
+    z-index: 2;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+    text-transform: lowercase;
+    display: inline-block;
+    position: relative;
+    line-height: 1.4em;
+    white-space: nowrap;
+}
+
+.left a{
+  font-size: 30px;
+}
 
 </style>
 
