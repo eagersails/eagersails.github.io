@@ -74,8 +74,7 @@ display: block; color: black;">
 </div>
 </div> 
 </div>
-<div id="sidebar-left">
-<div class="left"><a href="#">back to top</a></div></div>
+<div id="sidebar-left"><li><a href="#">back to top</a></li></div>
 
 
 </body>
@@ -214,7 +213,7 @@ display: inline-block;
   width: 200px;
 }
 
-.left{
+#sidebar-left li{
     top: 50%;
     left: 5%;
     position: fixed;
@@ -226,13 +225,13 @@ display: inline-block;
     transform: rotate(90deg);
     display: block;
     text-transform: lowercase;
-    display: inline-block;
+    display: block;
     position: relative;
     line-height: 1.4em;
     white-space: nowrap;
 }
 
-.left a{
+#sidebar-left a{
   font-size: 30px;
   color: #004fce;
 }
