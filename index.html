@@ -24,6 +24,7 @@
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 
 <div class="changeColor">
+<div id="container">
 <div id="header"><a href="">About</a> <a href="">Resume</a> <a href="">Work</a></div></div>
 
 
@@ -72,9 +73,10 @@ display: block; color: black;">
 <a style="display: block;" onclick="toggle_visibility('contact');">Ok</a>
 </div>
 </div> 
+</div>
 
-
-<div class="left"><a href="#">back to top</a></div>
+<div id="sidebar-left">
+<div class="left"><a href="#">back to top</a></div></div>
 
 
 </body>
@@ -89,28 +91,34 @@ display: block; color: black;">
 body {
 	font-family: 'Work Sans', sans-serif;
     font-size: 12px;
+
  }
 
 body a{
 	color: #004fce;
-	text-decoration: none;
+	text-decoration: none;}
+
+#container {
+  margin: 0 auto;         
+  text-align: left;       
+  width: 100%;     
 }
 
  /**Header and Navigation**/ 
 #header{
 	color: #6699cc;
 	display: inline-block;
-    width: 100%;
-    height: 30px;
-  	z-index: 999;
-  	font-size:15px;
+  width: 100%;
+  height: 30px;
+  z-index: 999;
+  font-size:15px;
 	word-spacing: 15px;
 	text-align:center;
 	font-family: 'work sans', sans-serif;
 	width: 100%;
-    padding: 15px 0px 5px 0px;
-    border: 25px 25px 25px 25px;
-    background-color: #fff;
+  padding: 15px 0px 5px 0px;
+  border: 25px 25px 25px 25px;
+  background-color: #fff;
   
 }
 
@@ -118,6 +126,7 @@ body a{
 #header a:link, #header a:visited, #header a:hover {	
 	color: #6699cc;
 	text-decoration: none;
+  display:inline;
 }
 
 /**About**/
@@ -195,6 +204,16 @@ display: inline-block;
 
 /**Left and Right Nav**/
 
+#sidebar-left {
+  float: left; 
+  width: 200px; 
+}
+
+#sidebar-right {
+  float: right;
+  width: 200px;
+}
+
 .left{
     top: 50%;
     left: 5%;
@@ -218,6 +237,20 @@ display: inline-block;
   color: #004fce;
 }
 
+/**Footer**/
+
+#footer {
+  clear: both; 
+  width: 100%;         
+}
+
 </style>
+  
+
+
+
+
+
+
 
 
