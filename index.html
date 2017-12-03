@@ -206,25 +206,19 @@ display: inline-block;
 
 #sidebar-left {
 float: left; 
-width: 200px; 
+width: 200px;
+top: 50%;
+left: 5%;
+position: fixed;
+z-index: 2;
 }
 
-#sidebar-right {
-  float: right;
-  width: 200px;
-  top: 50%;
-    left: 5%;
-    position: fixed;
-    z-index: 2;
+#sidebar-left li{
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-}
-
-#sidebar-left li{
-    display: block;
     text-transform: lowercase;
     display: block;
     line-height: 1.4em;
@@ -235,6 +229,11 @@ width: 200px;
   font-size: 30px;
   color: #004fce;
 }
+#sidebar-right {
+  float: right;
+  width: 200px;
+}
+
 
 /**Footer**/
 
