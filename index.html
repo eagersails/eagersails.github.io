@@ -33,15 +33,17 @@
 <div id="sidebar-left"><li><a href="#">back to top</a></li></div>
 <div id="sidebar-right"><li><a href="#">projects</a></li></div>
 
+<div id="content">
+<div class="projects">
+<p><a href="/illustration">VIEW MORE</a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<img src="Images/illustration 3.png"></div>
 
-<div id="projects">
-<img src="Images/illustration 3.png">
-<img src="Images/illustration 4.png">
-<img src="Images/illustration 5.png">
-<img src="Images/imperium.jpg">
-<iframe width="300" height="200" src="https://www.youtube.com/embed/Pno9OyIYaxQ" frameborder="0" allowfullscreen></iframe>
-<iframe width="300" height="200" src="https://www.youtube.com/embed/Ytfv_2Ludbw" frameborder="0" allowfullscreen></iframe>
-<img src="Images/googlantis.jpg"><img src="Images/Q-Funding-Pitch.3_1340_c.jpeg"></div>
+<div class="projects">
+<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<img src="Images/illustration 4.png"></div>
+
+</div>
+
 
 <div id="contact"> 
 <img src="eagersails.github.io/Images/contactme.png">
@@ -137,6 +139,8 @@ body a{
 
 #about{
 	padding-top: 75px;
+  padding-right: 20px
+  padding-left: 20px;
 	margin: 0 auto;
 	margin-bottom: 100px;
 	display: inline-block;
@@ -178,29 +182,28 @@ body a{
 
 /**Projects**/
 
-#projects{
-padding-top: 75px;
-margin: 0 auto;
-margin-bottom: 100px;
-display: inline-grid;
+#content {
+  display: inline-grid;
 }
 
-#projects img{
+.projects {
+  display:inline-block;
+  margin: 0 auto 5px;
+  padding: 2px 2px 2px 2px;
+  border: 2px solid black;
+}
+
+.projects img{
   max-width:250px;
   padding: 10px 10px 10px 10px;
+  float: left;
 }
 
-@media (max-width: 800px) {
-    .projects {
-        width: 50%;
-    }
+.projects p{
+  float: right;
+  max-width: 680px;
 }
 
-@media (max-width: 600px) {
-    .projects {
-        width: 100%;
-   }
-}
 
 /**Left and Right Nav**/
 
