@@ -33,14 +33,32 @@
 <div id="sidebar-left"><li><a href="#">back to top</a></li></div>
 <div id="sidebar-right"><li><a href="#">projects</a></li></div>
 
-<div id="content">
-<div class="projects">
-<p><a href="/illustration">VIEW MORE</a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<div class="content">
+<center>
+<div class="projects"><p><a href="/illustration">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
 <img src="Images/illustration 3.png"></div>
 
 <div class="projects">
-<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
 <img src="Images/illustration 4.png"></div>
+
+<div class="projects">
+<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
+<img src="Images/illustration 4.png"></div>
+</center>
+
+</div>
+
+<div class="content3">
+<center>
+<div class="projects3">
+<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
+<img src="Images/illustration 4.png"></div>
+
+<div class="projects3">
+<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
+<img src="Images/illustration 4.png"></div>
+</center>
 
 </div>
 
@@ -182,29 +200,50 @@ body a{
 
 /**Projects**/
 
-#content {
-  display: inline-grid;
+.content {
+display: grid;
+vertical-align: top;
 }
 
 .projects {
-  display:inline-block;
-  margin: 0 auto 5px;
+  display:inline-grid;
   padding: 2px 2px 2px 2px;
-  border: 2px solid black;
+  margin-right: 10px;
 }
 
 .projects img{
-  max-width:250px;
   padding: 10px 10px 10px 10px;
   float: left;
+  max-width:250px;
 }
 
 .projects p{
-  display:inline-block;
-  max-width: 680px;
+  display:inline-grid;
+  max-width: 250px;
 }
 
+.content3 {
+display: grid;
+vertical-align: top;
+margin-top: 40px;
+}
 
+.projects3 {
+  display:inline-grid;
+  padding: 2px 2px 2px 2px;
+  margin-right: 10px;
+}
+
+.projects3 img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+  max-width: 400px;
+}
+
+.projects3 p{
+  display:inline-grid;
+  max-width: 400px;
+}
 /**Left and Right Nav**/
 
 #sidebar-left {
