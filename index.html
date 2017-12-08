@@ -25,26 +25,30 @@
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 
+
 <div id="header"><li><a href="">About</a> <a href="">Resume</a> <a href="">Work</a></li></div>
 
 
-<div id="about"><p>Hi! I'm <a href="">Khanh</a> and my goal is to craft inspirational content and experiences. I have background in shipping <a href="https://www.macys.com/">products</a>, marketing to small communities of users, and a knack for making <a href="http://welldressed.tumblr.com/tagged/my_gifs">.gifs</a>. </p></div>
+<div id="about"><p>Hi! I'm <a href="">Khanh</a>, I craft inspirational content and experiences. I have background in shipping <a href="https://www.macys.com/">products</a>, forming communities and working with evangelists and a knack for making <a href="http://welldressed.tumblr.com/tagged/my_gifs">.gifs</a>. </p></div>
 
 <div id="sidebar-left"><li><a href="#">back to top</a></li></div>
 <div id="sidebar-right"><li><a href="#">projects</a></li></div>
 
 <div class="content">
 <center>
-<div class="projects"><p><a href="/illustration">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
-<img src="Images/illustration 3.png"></div>
 
 <div class="projects">
-<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
-<img src="Images/illustration 4.png"></div>
+<img src="Images/illustration 3.png">
+<p><a href="/illustration">Lettering</a>↳Poof Poof Bakery<br>↳Low Brow Magazine<br>↳Stay What You Are</p></div>
 
 <div class="projects">
-<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
-<img src="Images/illustration 4.png"></div>
+<img src="Images/photo.jpg">
+<p><a href="/illustration">Photos</a>↳Concrete Jungles<br>↳Square Format / 35mm<br>↳Faces</p></div>
+
+<div class="projects">
+<img src="Images/productgoogle.jpg">
+<p><a href="/illustration">Product</a>➭ Q!<br>➭ Googlantis<br>➭ Macys.com</p></div>
+
 </center>
 
 </div>
@@ -52,12 +56,13 @@
 <div class="content3">
 <center>
 <div class="projects3">
-<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
-<img src="Images/illustration 4.png"></div>
+<iframe width="400" height="400" src="https://www.youtube.com/embed/Pno9OyIYaxQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<p><a href="/illustration">Videos</a>Vlogs, travel, experiments</p></div>
 
 <div class="projects3">
-<p><a href="/">VIEW MORE</a>Lorem Ipsum is simply dummy text</p>
-<img src="Images/illustration 4.png"></div>
+<img src="Images/visual.jpg">
+<p><a href="/illustration">Visual
+ </a> Infographics, Pamphlets, Handbills, Magazine Spreads</p></div>
 </center>
 
 </div>
@@ -111,7 +116,7 @@ display: block; color: black;">
 
 body {
 	font-family: 'Work Sans', sans-serif;
-    font-size: 12px;
+  font-size: 12px;
 
  }
 
@@ -148,7 +153,7 @@ body a{
 
 #header a:active, 
 #header a:link, #header a:visited, #header a:hover {	
-	color: #6699cc;
+	color: #004fce;
 	text-decoration: none;
   display:inline;
 }
@@ -156,18 +161,16 @@ body a{
 /**About**/
 
 #about{
-	padding-top: 75px;
-  padding-right: 20px
-  padding-left: 20px;
-	margin: 0 auto;
-	margin-bottom: 100px;
-	display: inline-block;
+display:block; 
+padding: 20px 10px 20px 10px;
+margin: 0 auto;
+max-width: 800px;
 }
 
 #about p{
 	font-size:40px;
 	word-spacing: 15px;
-	text-align:center;
+	text-align:left;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #000;
 
@@ -202,11 +205,11 @@ body a{
 
 .content {
 display: grid;
-vertical-align: top;
 }
 
 .projects {
   display:inline-grid;
+  vertical-align: top;
   padding: 2px 2px 2px 2px;
   margin-right: 10px;
 }
@@ -220,18 +223,40 @@ vertical-align: top;
 .projects p{
   display:inline-grid;
   max-width: 250px;
+  text-align: right;
 }
+
+.projects a{
+  font-size: 25px;
+  text-align: left;
+  text-transform: none;
+  text-decoration: bold;
+  border-bottom: 2px black solid;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.projects a:hover{
+  font-size: 25px;
+  text-align: left;
+  text-decoration: bold;
+  color: #004fce;
+}
+
 
 .content3 {
 display: grid;
 vertical-align: top;
 margin-top: 40px;
+margin-bottom: 40px;
 }
 
 .projects3 {
   display:inline-grid;
   padding: 2px 2px 2px 2px;
   margin-right: 10px;
+  text-align: left;
+
 }
 
 .projects3 img{
@@ -243,7 +268,26 @@ margin-top: 40px;
 .projects3 p{
   display:inline-grid;
   max-width: 400px;
+  text-align: right;
 }
+
+.projects3 a{
+  font-size: 25px;
+  text-align: left;
+  text-transform: none;
+  text-decoration: bold;
+  border-bottom: 2px black solid;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.projects3 a:hover{
+  font-size: 25px;
+  text-align: left;
+  text-decoration: bold;
+  color: #004fce;
+}
+
 /**Left and Right Nav**/
 
 #sidebar-left {
