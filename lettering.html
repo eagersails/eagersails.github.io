@@ -35,12 +35,8 @@
 <div class="content">
 
 <div class="projects">
-<img src="Images/illustration 3.png">
-<p><a href="/lettering.html">Lettering</a>↳Poof Poof Bakery<br>↳Low Brow Magazine<br>↳Stay What You Are</p></div>
-
-<div class="projects">
 <img src="Images/photo.jpg">
-<p><a href="/illustration">Photos</a>↳Concrete Jungles<br>↳Square Format / 35mm<br>↳Faces</p></div>
+<p><a href="/illustration">Photos</a><br>↳Concrete Jungles<br>↳Square Format / 35mm<br>↳Faces</p></div>
 
 <div class="projects">
 <img src="Images/productgoogle.jpg">
@@ -110,7 +106,7 @@ display: grid;
 }
 
 .projects {
-  display:inline-grid;
+  display:inline-block;
   vertical-align: top;
   padding: 2px 2px 2px 2px;
   margin-right: 10px;
@@ -119,13 +115,15 @@ display: grid;
 .projects img{
   padding: 10px 10px 10px 10px;
   float: left;
-  max-width:600px;
+  max-width:500px;
 }
 
 .projects p{
-  display:inline-grid;
-  max-width: 250px;
-  float: right;
+  width: 400px;
+  height: 500px;
+  border: 2px white solid;
+  float: left;
+  margin: 0 auto;
 }
 
 .projects a{
@@ -134,7 +132,7 @@ display: grid;
   text-transform: none;
   text-decoration: bold;
   border-bottom: 2px white solid;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #fff;
 }
 
