@@ -47,6 +47,13 @@ At the UC Berkeley Google Designathon hosted by the Berkeley Design Council, we 
 Acted as Product Manager for Macys.com's Product details page to bring improvements to the desktop and mobile web enabled product details page both with internally built features and 3rd party technology.<br><br>
 That's all I can share for now!</p></div></div>
 
+<div class="projects">
+<iframe width="560" height="315" src="Q Promo New.mp4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen autoplay="off"></iframe>
+<div class="projectsabout">
+<h1>Q!</h1><p> 
+Acted as Product Manager for Macys.com's Product details page to bring improvements to the desktop and mobile web enabled product details page both with internally built features and 3rd party technology.<br><br>
+That's all I can share for now!</p></div></div>
+
 </div>
 </body>
 </html>
@@ -107,12 +114,10 @@ body a{
 /**Projects**/
 
 .content {
-display: grid;
+display: block;
 }
 
 .projects {
-  display:inline-block;
-  vertical-align: top;
   padding: 2px 2px 2px 2px;
   margin-right: 10px;
 }
@@ -123,9 +128,14 @@ display: grid;
   max-width:500px;
 }
 
+.projects iframe{
+  padding: 10px 10px 10px 10px;
+  float: left;
+  max-width:500px;
+}
+
 .projectsabout{
   width: 400px;
-  height: 500px;
   float: left;
   margin: 0 auto;
 }
