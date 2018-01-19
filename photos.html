@@ -38,7 +38,7 @@
 
 
 
-<cemter><img src="Photography/edae.jpg"> <img src="Photography/hankang.jpg"></cemter>cen
+<div class=photogrid><div class=photos><img src="Photography/edae.jpg"></div><div class=photos><img src="Photography/hankang.jpg"></div></div>
 
 
 
@@ -47,5 +47,37 @@
 
 <footer></footer>
 </html>
+<style>
+.photogrid {
+display: grid;
+width: 900px;
+}
 
+.photos {
+  display:inline-grid;
+  vertical-align: top;
+  padding: 2px 2px 2px 2px;
+  margin-right: 10px;
+  max-width: 600px;
+}
+
+.photos img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+  max-width:450px;
+}
+
+.photosright {
+  display:inline-grid;
+  vertical-align: top;
+  padding: 2px 2px 2px 2px;
+  margin-right: 10px;
+  max-width: 1400px;
+}
+
+.photosright img{
+  padding: 10px 10px 10px 10px;
+  float: right;
+  max-width:600px;
+</style>
 
