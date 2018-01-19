@@ -37,8 +37,9 @@
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
 <div id="sidebar-right"><li><a href="https://eagersails.github.io/#projects">projects →</a></li></div>
 
-
-<a name=projects></a>
+<section id="main">
+ <article class="panel" id="projects">
+        </article>
 <center>
 <div class="content">
 
@@ -55,6 +56,7 @@
 <p><a href="/">Low Brow - Issue 01</a></p></div>
 </center>
 </div>
+</section>
 
 
 
@@ -351,6 +353,23 @@ footer a:link, #footer a:visited, #footer a:hover, #footer a:active{
   font-family: 'Source Sans Pro', sans-serif;
      
 }
+
+/**Scrolling**/
+
+.panel {
+    z-index:0; 
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+
+a[ id= "projects" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+
 
 </style>
   
