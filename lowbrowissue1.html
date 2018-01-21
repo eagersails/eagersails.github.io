@@ -35,15 +35,16 @@
 <div id="top"></div>
 <div id="header"><li><a href="http://eagersails.github.io/#">About</a> <a href="http://eagersails.github.io/resume 10/17.pdf" download="Khanh Pham Resume">Resume</a> <a href="">Work</a></li></div>
 
+<center>
+<div class=photogrid><div class=photos>
+<img src="Images/lowbrow-cities.jpg">
+
+</div></div>
+
 
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
 <div id="sidebar-right"><li><a data-scroll href="#top">← back to top</a></li></div>
 
-<center>
-<div id="about">
-<img src="Images/lowbrow-cities.jpg">
-
-</div>
 
 <script>
   var scroll = new SmoothScroll('a[href*="#"]');
@@ -55,3 +56,35 @@
 
 <footer></footer>
 </html>
+
+<style>
+.photogrid {
+display: grid;
+}
+
+.photos {
+  display:inline-grid;
+  vertical-align: top;
+  padding: 2px 2px 2px 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.photos img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+  max-width:450px;
+}
+
+.photosright {
+  display:inline-grid;
+  vertical-align: top;
+  padding: 2px 2px 2px 100px;
+  margin-right: 10px;
+}
+
+.photosright img{
+  padding: 10px 10px 10px 10px;
+  float: right;
+  max-width:600px;
+</style>
