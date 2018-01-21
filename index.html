@@ -5,33 +5,8 @@
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+<script src="dist/js/smooth-scroll.js"></script>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "projects") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 
 <body>
 <div id="container">
@@ -64,10 +39,10 @@ $(document).ready(function(){
 <div id="about"><p>Hi! I'm <a href="">Khanh</a>, I ship <a href="https://www.macys.com/">experiences</a> and make <a href="http://welldressed.tumblr.com/tagged/my_gifs">.gifs</a>. I've worked at Macys.com, Autodesk, Viki, & non-profit spaces delivering omnichannel experiences to a variety of audiences. I'm interested in the intersection of pixels and IRL.</p></div>
 
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
-<div id="sidebar-right"><li><a href="https://eagersails.github.io/#projects">projects →</a></li></div>
+<div id="sidebar-right"><li><a data-scroll href="#projects">projects →</a></li></div>
 
 
-<a name=projects></a>
+<div id="projects"></div>
 <center>
 <div class="content">
 
@@ -85,7 +60,9 @@ $(document).ready(function(){
 </center>
 </div>
 
-
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 
 
 
