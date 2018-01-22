@@ -1,3 +1,6 @@
+
+<style>
+
 /**General**/ 
 
 body {
@@ -210,7 +213,7 @@ margin-bottom: 40px;
 #sidebar-left {
 float: left; 
 width: 150px;
-top: 75%;
+top: 60%;
 left: 2%;
 position: fixed;
 z-index: 2;
@@ -234,9 +237,9 @@ word-spacing: 25px
   color: navy;
 }
 #sidebar-right {
-  float: right;
-  width: 200px;
-top: 75%;
+float: right;
+width: 200px;
+top: 40%;
 right: 2%;
 position: fixed;
 z-index: 2;
@@ -255,8 +258,9 @@ z-index: 2;
 }
 
 #sidebar-right a{
-  font-size: 30px;
+  font-size: 20px;
   color: navy;
+  padding-right: 20px;
 }
 
 /**Footer**/
@@ -281,3 +285,5 @@ footer a:link, #footer a:visited, #footer a:hover, #footer a:active{
      
 }
 
+</style>
+  
