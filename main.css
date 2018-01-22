@@ -239,7 +239,7 @@ word-spacing: 25px
 #sidebar-right {
 float: right;
 width: 200px;
-top:75%;
+top:40%;
 right: 2%;
 position: fixed;
 z-index: 2;
