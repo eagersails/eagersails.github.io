@@ -1,0 +1,84 @@
+
+<!doctype html/css>
+<html>
+<link rel='stylesheet' type='text/css' href='main.css'/>
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+
+<body>
+<div id="container">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="eagersails.github.io/garand-sticky-73b0fbe/jquery.sticky.js"></script>
+
+  <script>
+    $(window).load(function(){
+      $("#header").sticky({ topSpacing: 0 });
+    });
+  </script>
+  <script type="text/javascript">
+  function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
+
+</script>
+
+
+
+<div id="header"><li><a href="http://eagersails.github.io/#">About</a> <a href="/resume 10/17.pdf">Resume</a> <a href="">Work</a></li></div>
+
+
+<div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
+<div id="sidebar-right"><li><a href="https://eagersails.github.io/#projects">projects →</a></li></div>
+
+
+
+<div class=photogrid>
+
+<div class=photos><Center><img src="Images/mrbusinesshero.jpg"></Center></div>
+</div>
+
+
+
+
+</body>
+
+<footer></footer>
+</html>
+<style>
+.photogrid {
+display: grid;
+}
+
+.photos {
+  display:inline-grid;
+  vertical-align: top;
+  padding: 2px 2px 2px 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.photos img{
+  padding: 10px 10px 10px 10px;
+  float: left;
+  max-width:900px;
+}
+
+.photosright {
+  display:inline-grid;
+  vertical-align: top;
+  padding: 2px 2px 2px 100px;
+  margin-right: 10px;
+}
+
+.photosright img{
+  padding: 10px 10px 10px 10px;
+  float: right;
+  max-width:600px;
+</style>
+
