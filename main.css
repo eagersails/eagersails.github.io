@@ -103,6 +103,7 @@ max-width: 550px;
 
 .content {
 display: grid;
+max-width: 95%;
 }
 
 .projects {
@@ -212,8 +213,8 @@ margin-bottom: 40px;
 
 #sidebar-left {
 float: left; 
-width: 150px;
-top: 60%;
+width: 2.5%;
+top: 75%;
 left: 2%;
 position: fixed;
 z-index: 2;
@@ -238,7 +239,7 @@ word-spacing: 25px
 }
 #sidebar-right {
 float: right;
-width: 200px;
+width: 2.5%;
 top:40%;
 right: 2%;
 position: fixed;
