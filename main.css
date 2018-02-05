@@ -6,7 +6,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-size: 12px;
   color: #000;
-  background-color: #eddcb4;
+  background-color: whitesmoke;
 
  }
 
@@ -32,9 +32,7 @@ body a{
   font-family: 'work sans', sans-serif;
   width: 100%;
   padding: 15px 0px 5px 0px;
-  border: 25px 25px 25px 25px;
-  background-color: #eddcb4;
-  
+  border: 25px 25px 25px 25px;  
 }
 
 #header li{
@@ -55,7 +53,7 @@ display:block;
 padding: 25% 10px 25% 10px;
 margin: 0 auto;
 height: 100%;
-max-width: 550px;
+max-width: 400px;
 
 }
 
