@@ -56,6 +56,11 @@ margin: 0 auto;
 height: 100%;
 max-width: 400px;
 
+#about img{
+  max-width: 300px;
+  
+}
+
 }
 
 #about p{
