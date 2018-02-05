@@ -51,14 +51,14 @@ body a{
 
 #about{
 display:block; 
-padding: 25% 10px 25% 10px;
+padding: 10% 10px 25% 10px;
 margin: 0 auto;
 height: 100%;
 max-width: 400px;
 
 #about img{
   max-width: 300px;
-  
+
 }
 
 }
