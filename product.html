@@ -1,6 +1,7 @@
 <!doctype html/css>
 <html>
 <link rel='stylesheet' type='text/css' href='main.css'/>
+
 <body>
 <div id="container">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -30,13 +31,12 @@
 
 
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
-<div id="sidebar-right"><li><a data-scroll href="#about">← back to top</a><a data-scroll href="#projects">projects →</a></li></div>
 
 <div class="content">
 
-<div class="projects">
+<div class="product">
 <img src="Images/googlantis.jpg">
-<div class="projectsabout">
+<div class="productabout">
 <h1>Googlantis</h1><p> 
 At the UC Berkeley Google Designathon hosted by the Berkeley Design Council in partnership with Google, we were tasked with designing a city’s infrastructure built to defend against a zombie apocalypse in 8 hours. Our team placed 2nd overall, won “Best Design”, and the “Audience Choice Award” out of 15+ teams, moving onto to present to the Google Plus design team at Google Headquarters in Mountain View, CA.
 
@@ -61,58 +61,64 @@ At the UC Berkeley Google Designathon hosted by the Berkeley Design Council in p
 
 <style>
 
+#container {
+  margin: 0 auto;         
+  text-align: left;       
+  width: 960px;   
+}
+
 /**Projects**/
 
 .content {
 display: block;
 }
 
-.projects {
+.product {
   padding: 2px 2px 2px 2px;
   margin-right: 10px;
 }
 
-.projects img{
+.product img{
   padding: 10px 10px 10px 10px;
   max-width:100%;
 }
 
-.projects iframe{
+.product iframe{
   padding: 10px 10px 10px 10px;
   float: left;
   max-width:500px;
 }
 
-.projectsabout{
+.productabout{
   width: 100%;
   margin: 0 auto;
 }
 
-.projectsabout p{
+.productabout p{
   font-family: 'Source Sans Pro', sans-serif;
   width: 600px;
   margin: 0 auto;
 
 }
 
-.projectsabout b{
+.productabout b{
   color: red;
 }
-.projectsabout a{
+.productabout a{
   text-align: left;
   text-transform: none;
   text-decoration: bold;
   color: #fff;
 }
 
-.projectsabout a:hover{
+.productabout a:hover{
   font-size: 25px;
   text-align: left;
   text-decoration: bold;
   color: #fff;
 }
 
-.projectsabout h1{
+.productabout h1{
   font-size: 25px;
   text-decoration: bold;
   border-bottom: 2px white solid;
