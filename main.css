@@ -6,8 +6,8 @@ body {
   font-family: 'Barlow', sans-serif;
 ;
   font-size: 12px;
-  color: #000;
-  background-color: whitesmoke;
+  color: #111725;
+  background-color: #f2e1d1;
 
  }
 
@@ -68,7 +68,7 @@ max-width: 400px;
   word-spacing: 7px;
   text-align:left;
   font-family: 'Barlow', sans-serif;
-  color: black;
+  color: #111725;
 
 }
 
@@ -88,7 +88,7 @@ max-width: 400px;
     padding: 35px 35px 35px 35px;
     top: 360px;
     left: 850px;
-    color: black;
+  color: #111725;
 }
 
 #contact a:link, #contact a:visited, #contact a:hover, #contact a:active{
