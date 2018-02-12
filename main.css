@@ -6,7 +6,7 @@ body {
   font-family: 'Barlow', sans-serif;
 ;
   font-size: 12px;
-  color: #111725;
+  color: #000033;
   background-color: #f2e1d1;
 
  }
@@ -42,7 +42,7 @@ body a{
 
 #header a:active, 
 #header a:link, #header a:visited, #header a:hover {  
-  color: red;
+  color: #cc3333;
   text-decoration: none;
   display:inline;
 }
@@ -56,10 +56,6 @@ margin: 0 auto;
 height: 100%;
 max-width: 400px;
 
-#about img{
-  max-width: 300px;
-
-}
 
 }
 
@@ -68,38 +64,16 @@ max-width: 400px;
   word-spacing: 7px;
   text-align:left;
   font-family: 'Barlow', sans-serif;
-  color: #111725;
+  color: #000033;
 
 }
 
 #about a:link, #about a:visited, #about a:hover, #about a:active{ 
-  color: red;
+  color:  #cc3333;
   text-decoration: underline;
   background-color: transparent;
   font-family: 'Barlow', sans-serif;
 
-}
-
-#contact{
-    display: block;
-    position: fixed;
-    width: 400px;
-    height: auto;
-    padding: 35px 35px 35px 35px;
-    top: 360px;
-    left: 850px;
-  color: #111725;
-}
-
-#contact a:link, #contact a:visited, #contact a:hover, #contact a:active{
-  color: black;
-}
-#contact img{ 
-  display: block;
-  position: relative;
-  max-width: 330px;
-  width: auto;
-  height: auto;}
 }
 
 
@@ -139,14 +113,14 @@ max-width: 95%;
   font-family: 'Barlow', sans-serif;
   border-bottom: 2px white solid;
   margin-bottom: 5px;
-  color: red;
+  color:  #cc3333;
 }
 
 .projects a:hover{
   font-size: 25px;
   text-align: left;
   text-decoration: bold;
-  color: red;
+  color:  #cc3333;
 }
 
 .projects h1{
@@ -157,7 +131,7 @@ max-width: 95%;
   border-bottom: 2px white solid;
   margin-bottom: 5px;
   margin-top: 0px;
-  color: red;
+  color:  #cc3333;
 }
 
 
@@ -239,7 +213,7 @@ word-spacing: 25px
 
 #sidebar-left a{
   font-size: 12px;
-  color: navy;
+  color:  #cc3333;
 }
 #sidebar-right {
 float: right;
@@ -264,7 +238,7 @@ z-index: 2;
 
 #sidebar-right a{
   font-size: 20px;
-  color: navy;
+  color:  #cc3333;
   padding-right: 40px;
 }
 
