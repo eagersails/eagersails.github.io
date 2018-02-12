@@ -1,16 +1,20 @@
 <!doctype html/css>
 <html>
 <link rel='stylesheet' type='text/css' href='main.css'/>
-<link href="https://fonts.googleapis.com/css?family=Barlow|Inconsolata" rel="stylesheet">
 
 
 <body>
 <div id="container">
 
+  /**Fonts and External javascript**/
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Inconsolata" rel="stylesheet">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="eagersails.github.io/garand-sticky-73b0fbe/jquery.sticky.js"></script>
   <script src="eagersails.github.io/dist/js/smooth-scroll.js"></script>
+  <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src=”scripts.js”></script>
 
+/**Sticky Header**/
 
   <script>
     $(window).load(function(){
@@ -28,9 +32,24 @@
 
 </script>
 
+/**Smooth Scroll**/
 <script>
   var scroll = new SmoothScroll('a[href*="#"]');
 </script>
+
+
+/**Change background color**/
+<script>
+  $(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+         $(‘body’).addClass(‘changeColor’)
+      }
+      if ($(this).scrollTop() < 50) {
+         $(‘body’).removeClass(‘changeColor’)
+      }
+   });
+}); </script>
 
 
 <div id="header"><li><a href="#about">About</a> <a href="http://eagersails.github.io/resume 10/17.pdf" download="Khanh Pham Resume">Resume</a> <a href="#projects">Projects</a></li></div>
@@ -39,7 +58,7 @@
 
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
 
-
+<div class="changecolor">
 <div id="projects"></div>
 <center>
 <div class="content">
@@ -62,6 +81,7 @@
 <p><a href="/mrbusiness.html">Mister Business</a></p>
 </div>
 </center>
+</div>
 </div>
 
 

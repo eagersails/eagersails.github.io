@@ -8,6 +8,8 @@ body {
   font-size: 12px;
   color: #000033;
   background-color: #f2e1d1;
+  transition: 0.3s all;
+
 
  }
 
@@ -20,6 +22,10 @@ body a{
   text-align: left;       
   width: 90%;   
 }
+
+.changeColor {
+   background: #f9f7f3;
+ }
 
  /**Header and Navigation**/ 
 #header{
