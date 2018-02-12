@@ -6,7 +6,6 @@
 <body>
 <div id="container">
 
-  /**Fonts and External javascript**/
   <link href="https://fonts.googleapis.com/css?family=Barlow|Inconsolata" rel="stylesheet">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="eagersails.github.io/garand-sticky-73b0fbe/jquery.sticky.js"></script>
@@ -14,31 +13,17 @@
   <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <script src=”scripts.js”></script>
 
-/**Sticky Header**/
-
   <script>
     $(window).load(function(){
       $("#header").sticky({ topSpacing: 0 });
     });
   </script>
-  <script type="text/javascript">
-  function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
 
-</script>
-
-/**Smooth Scroll**/
 <script>
   var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 
 
-/**Change background color**/
 <script>
   $(function() {
    $(window).scroll(function () {
