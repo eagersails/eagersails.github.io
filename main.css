@@ -2,6 +2,7 @@
 
 /**General**/ 
 
+
 body {
   font-family: 'Barlow', sans-serif;
 ;
@@ -30,7 +31,7 @@ body a{
   font-size:15px;
   word-spacing: 15px;
   text-align:center;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
   width: 100%;
   padding: 15px 0px 5px 0px;
   border: 25px 25px 25px 25px;  
@@ -63,7 +64,7 @@ max-width: 400px;
   font-size:12px;
   word-spacing: 7px;
   text-align:left;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
   color: #2024c9;
 
 }
@@ -72,7 +73,7 @@ max-width: 400px;
   color:  #2024c9;
   text-decoration: underline;
   background-color: transparent;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 
 }
 
@@ -103,7 +104,7 @@ max-width: 95%;
   display:inline-grid;
   max-width: 250px;
   text-align: right;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
   font-size: 10px;
 }
 
@@ -112,7 +113,7 @@ max-width: 95%;
   text-align: left;
   text-transform: none;
   text-decoration: bold;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
   border-bottom: 2px white solid;
   margin-bottom: 5px;
   color:  #2024c9;
@@ -162,7 +163,7 @@ margin-bottom: 40px;
   display:inline-grid;
   max-width: 400px;
   text-align: right;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
   font-size: 12px;
 }
 
@@ -253,7 +254,7 @@ footer {
   word-spacing: 15px;
   text-align:center;
   display: block;
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   height: 40px;
 }
@@ -262,7 +263,7 @@ footer a:link, #footer a:visited, #footer a:hover, #footer a:active{
   color: #fff;
   text-decoration: underline;
   background-color: transparent; 
-  font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
      
 }
 
