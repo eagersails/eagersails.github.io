@@ -82,15 +82,15 @@ font-family: 'Josefin Sans', sans-serif;
 
 .content {
 max-width: 95%;
+max-height:100%;
 }
 
 .projects {
 display:inline-block;
 vertical-align: top;
-padding: 2px 2px 2px 2px;
-margin-right: 10px;
-float:right;
-max-width: 450px;
+padding: 10%;
+float:left;
+max-width: 100%;
 text-align: left;
 }
 
@@ -102,38 +102,36 @@ text-align: left;
 
 .projects p{
 display:inline-block;
-max-width: 450px;
+max-width: 100%;
+float: left;
+padding: 5px 5px 5px 5px;
 text-align: left;
 font-family: 'Josefin Sans', sans-serif;
-font-size: 10px;
+font-size: 12px;
 }
 
 .projects a{
-  font-size: 25px;
-  text-align: left;
-  text-transform: none;
-  text-decoration: bold;
+font-size: 50px;
+text-align: left;
+text-transform: none;
+text-decoration: bold;
 font-family: 'Josefin Sans', sans-serif;
-  border-bottom: 2px white solid;
-  margin-bottom: 5px;
-  color:  #2024c9;
+color:  #2024c9;
 }
 
 .projects a:hover{
-  font-size: 25px;
+  font-size: 50px;
   text-align: left;
   text-decoration: bold;
   color:  #2024c9;
 }
 
 .projects h1{
-  font-size: 25px;
+  font-size: 50px;
   font-weight: normal;
   text-align: left;
   text-transform: none;
-  border-bottom: 2px white solid;
   margin-bottom: 5px;
-  margin-top: 0px;
   color:  #2024c9;
 }
 
