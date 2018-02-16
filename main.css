@@ -80,18 +80,18 @@ font-family: 'Josefin Sans', sans-serif;
 
 /**Projects**/
 
-article{
-  display:block; width:100%; text-align:right; height:100vh; margin:6em 0 0 0;}
-
 .content {
 max-width: 95%;
 }
 
 .projects {
-  display:inline-grid;
-  vertical-align: top;
-  padding: 2px 2px 2px 2px;
-  margin-right: 10px;
+display:inline-block;
+vertical-align: top;
+padding: 2px 2px 2px 2px;
+margin-right: 10px;
+float:right;
+max-width: 450px;
+text-align: left;
 }
 
 .projects img{
@@ -101,11 +101,11 @@ max-width: 95%;
 }
 
 .projects p{
-  display:inline-grid;
-  max-width: 250px;
-  text-align: right;
+display:inline-block;
+max-width: 450px;
+text-align: left;
 font-family: 'Josefin Sans', sans-serif;
-  font-size: 10px;
+font-size: 10px;
 }
 
 .projects a{
