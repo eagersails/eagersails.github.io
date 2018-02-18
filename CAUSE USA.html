@@ -28,26 +28,28 @@
 
 <div id="header"><li><a href="http://eagersails.github.io/#about">About</a> <a href="http://eagersails.github.io/resume 10/17.pdf" download="Khanh Pham Resume">Resume</a> <a href="http://eagersails.github.io/#projects">Projects</a></li></div>
 
+<div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
 
 
+<div class="content">
+<div class="photos">
 
-<div class=photogrid>
+<img src="Images/Women In Power 2013.png" alt="Avatar" class="image">
+<div class="overlay"><div class="text">Women in Power</div></div></div>
 
-<div class=photos>
-<div class="productabout"><h1>About CAUSE</h1> <p> "Founded in 1991 as the California Asian American Student Internship Coalition (CASIC), CLA’s goal is to develop a pipeline of civic leadership for the APA community."<br><br>At CAUSE, I worked as the <b>Marketing and Communications</b> Assistant under the Director of Communications. I created graphic collatarel for events and helped coordinate events including Leadership Academy and Women in Power Speaker Panel (featuring Kamala Harris! 2020!!).</p></div>
+<div class="photos">
+<img src="Images/leadershipacademy.png" alt="Avatar" class="image">
+<div class="overlay"><div class="text2">Leadership Academy</div></div>
+<br><br>
+</div>
+<div class="content">
 
-
-
-
-<img src="Images/Women In Power 2013.jpg"><br>
-<img src="Images/leadershipacademy.jpg"></Center><br>
-
+<div class="photos">
+<center><img src="Images/baremagazine.png" alt="Avatar" class="image2"></center>
+<div class="overlay"><div class="text3">Bare Magazine</div></div>
 
 </div>
 
-
-
-<div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
 
 
 </body>
@@ -55,23 +57,31 @@
 <footer></footer>
 </html>
 <style>
-.photogrid {
-display: grid;
+
+.content{
+max-width: 100%;
+vertical-align: top;
+padding-top: 20px;
+margin: 0 auto;
 }
 
 .photos {
-  display:inline-grid;
-  vertical-align: top;
+  display: inline-grid;
   padding: 2px 2px 2px 2px;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
-.photos img{
-  padding: 10px 10px 10px 10px;
-margin: 0 auto;
-  max-width:70%;
-  height: auto;
+.image{
+display:inline-grid;
+padding: 10px 10px 10px 10px;
+max-width:550px;
+height: auto;
+}
+
+.image2{
+display:inline-grid;
+padding: 10px 10px 10px 10px;
+max-width:70%;
+height: auto;
 }
 
 .photosright {
@@ -122,6 +132,73 @@ text-align: left;
   border-bottom: 2px white solid;
   margin-bottom: 15px;
 }
+
+
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.photos:hover .overlay {
+  opacity: 1;
+}
+
+.photos:hover .image {
+  opacity: .7;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.text2 {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.text3 {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+
 
 </style>
 
