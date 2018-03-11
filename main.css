@@ -91,7 +91,6 @@ padding-left: 5%;
 display:inline-block;
 vertical-align: top;
 padding: 5%;
-float:left;
 max-width: 100%;
 text-align: left;
 }
@@ -103,7 +102,7 @@ text-align: left;
 }
 
 .projects p{
-display:inline-block;
+display:block;
 max-width: 100%;
 padding: 5px 5px 5px 5px;
 text-align: left;
@@ -112,12 +111,13 @@ font-size: 12px;
 }
 
 .projects a{
-font-size: 50px;
+font-size: 15px;
 text-align: left;
 text-transform: none;
 text-decoration: bold;
 font-family: 'Josefin Sans', sans-serif;
 color:  #2024c9;
+line-height: 0px;
 }
 
 .projects a:hover{
@@ -126,12 +126,12 @@ color:  #2024c9;
 }
 
 .projects h1{
-  font-size: 50px;
+  font-size: 30px;
   font-weight: normal;
   text-align: left;
   text-transform: none;
   margin-bottom: 5px;
-  color:  #2024c9;
+  color:  black;
 }
 
 
