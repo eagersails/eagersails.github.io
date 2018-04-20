@@ -31,20 +31,15 @@
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
 
 
-<div class="content">
-<div class="photos">
-<img src="Images/Women In Power 2013.png" alt="Avatar" class="image">
+<div class=imageone><img src="Images/Women In Power 2013.png" alt="Avatar" class="image"></div>
 <div class="overlay"><div class="text">Women in Power</div></div></div>
 
-<div class="photos">
-<img src="Images/leadershipacademy.png" alt="Avatar" class="image">
-<div class="overlay"><div class="text2">Leadership Academy</div></div>
-<br><br>
-</div>
-<div class="content">
-<Center><iframe width="560" height="315" src="https://www.youtube.com/embed/G_IpKKtEnjs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></Center><div class="productabout"><br>
-<h1>CAUSE USA</h1><p>In the summer of 2013 I had the wonderful opportunity to work at 501(c) nonprofit CAUSE USA whose work focuses on empowering Asian Americans. There, I worked directly under the Director of Communications and had the opportunity to dive into the world of marketing and communications. I designed pamphlets, help run events such as the Women in Power conference (feature Kamala Harris as a speaker that year!), did press outreach, and even helped repaint the CAUSE Office :)<br></p></div>
-</div>
+<div class=imagetwo><img src="Images/leadershipacademy.png" alt="Avatar" class="image">
+<div class="overlay"><div class="text2">Leadership Academy</div></div></div>
+
+
+<div class=imagethree><h1>CAUSE USA</h1><p>In the summer of 2013 I had the wonderful opportunity to work at 501(c) nonprofit CAUSE USA whose work focuses on empowering Asian Americans. There, I worked directly under the Director of Communications and had the opportunity to dive into the world of marketing and communications. I designed pamphlets, help run events such as the Women in Power conference (feature Kamala Harris as a speaker that year!), did press outreach, and even helped repaint the CAUSE Office :)<br></p><br><iframe width="560" height="315" src="https://www.youtube.com/embed/G_IpKKtEnjs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
 
 
 
@@ -59,82 +54,6 @@ max-width: 100%;
 vertical-align: top;
 padding-top: 20px;
 margin-right: 50px;}
-
-.photos {
-  display: inline-grid;
-  padding: 2px 2px 2px 2px;
-}
-
-.image{
-display:inline-grid;
-padding: 10px 10px 10px 10px;
-max-width:550px;
-height: auto;
-}
-
-.image2{
-display:inline-grid;
-padding: 10px 10px 10px 10px;
-max-width:70%;
-height: auto;
-}
-
-.photosright {
-  display:inline-grid;
-  vertical-align: top;
-  padding: 2px 2px 2px 100px;
-  margin-right: 10px;
-}
-
-.photosright img{
-  padding: 10px 10px 10px 10px;
-  float: right;
-  max-width:600px;
-}
-
-  .productabout{
-  width: 65%;
-  margin: 0 auto;
-}
-
-.productabout p{
-  font-family: 'Barlow', sans-serif;
-  width: 450px;
-  margin: 0 auto;
-  padding-bottom: 30px;
-
-}
-
-.productabout b{
-  color: red;
-}
-.productabout a{
-  text-align: left;
-  text-transform: none;
-  text-decoration: bold;
-  color: #fff;
-}
-
-.productabout a:hover{
-  font-size: 25px;
-  text-align: left;
-  text-decoration: bold;
-  color: #fff;
-}
-
-.productabout h1{
-  font-size: 30px;
-  text-decoration: bold;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.productabout h2{
-  font-size: 25px;
-  text-decoration: bold;
-  margin-bottom: 15px;
-  text-align: center;
-}
 
 
 .overlay {
@@ -201,7 +120,53 @@ height: auto;
   text-align: left;
 }
 
+body{
+  background-color:white;
+}
 
+.description{
+  width: 60%;
+  margin: 0 auto;
+  ;
+}
+.description p{ 
+  text-align:center;
+  text-transform: none;
+  font-weight: normal;
+font-family: 'Martel Sans', sans-serif;
+  font-size: 10px;
+
+ }
+
+.imageone {
+  right: 5%;
+  position: absolute;
+  width:100%;
+  top:20%;
+}
+.imageone img{
+width: 40%;
+padding: 5px 5px 5px 5px;
+}
+
+.imagetwo{
+  position:absolute;
+  left: 50%;
+  top: 10%;
+  z-index: -1
+}
+.imagetwo img{
+width: 100%;
+max-width: 800px}
+
+
+.imagethree{    
+  position: absolute;
+    top: 90%;
+}
+.imagethree img{
+width: 80%;
+margin: 2%;}
 
 </style>
 
