@@ -29,17 +29,17 @@
 
 
 <div id="header"><li><a href="http://eagersails.github.io/#about">About</a> <a href="http://eagersails.github.io/resume 10/17.pdf" download="Khanh Pham Resume">Resume</a> <a href="http://eagersails.github.io/#projects">Projects</a></li></div>
-<div class=imageone><img src="Images/imperium.jpg">
-<div class=description><h1>Mister Business</h1> <p> Mister Business is an annual charity event hosted by UC Berkeley's ABA bringing together representatives from 8 businesss organizations to compete for the crown of Mister Business. I was approached to do the graphic collatarel by the host. We brainstormed the idea "Man of the Year" based on its association with GQ and an urge to break away with past Mister Business themes which usually revolved around more primal characteristics of 'men' (not to be heteronormative). Previous themes include: Invictus, League of Extraordinary Gentleman. <br><br>
-'Man of the Year' emphasizes the modernity and a step away from tradition to celebrate the 11th annual Mr. Business event.</p></div></div>
-
-<div class=imagetwo><img src="Images/mr-b.jpg"></div>
-<br>
-
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
-<div class=imagethree><img src="eagersails.github.io/Images/mrbusinesshero.png"></div>
 
 
+<div class=main>
+<div id=imageone><img src="Images/imperium.jpg"></div>
+<div id=imagetwo><img src="Images/mr-b.jpg"></div>
+<h1>Mister Business</h1> <p> Mister Business is an annual charity event hosted by UC Berkeley's ABA bringing together representatives from 8 businesss organizations to compete for the crown of Mister Business. I was approached to do the graphic collatarel by the host. We brainstormed the idea "Man of the Year" based on its association with GQ and an urge to break away with past Mister Business themes which usually revolved around more primal characteristics of 'men' (not to be heteronormative). Previous themes include: Invictus, League of Extraordinary Gentleman. <br><br>
+'Man of the Year' emphasizes the modernity and a step away from tradition to celebrate the 11th annual Mr. Business event.</p>
+
+<img src="Images/mrbusinesshero.png">
+</div>
 
 </body>
 
@@ -47,55 +47,68 @@
 </html>
 
 <style>
+
 body{
   background-color:white;
 }
 
-.description{
-  width: 60%;
-  margin: 0 auto;
-  ;
-}
-.description p{ 
-  text-align:center;
-  text-transform: none;
-  font-weight: normal;
-font-family: 'Martel Sans', sans-serif;
-  font-size: 10px;
-
- }
-
-.imageone {
-  right: 5%;
-  position: absolute;
-  width:100%;
-  top:20%;
-}
-.imageone img{
-width: 40%;
-padding: 5px 5px 5px 5px;
-}
-
-.imagetwo{
-  position:absolute;
-  left: 50%;
-  top: 10%;
-  z-index: -1
-}
-.imagetwo img{
-width: 100%;
-max-width: 800px}
-
-
-.imagethree {
-    display: block;
-    position: absolute;
-    top: 85%;
-    left: 20%;
-    z-index: -1;
-    margin: 5%;
+.main{
+  display: block;
+  position: relative;
+  width: 95%;
+  margin: 5% 5%;
+  overflow: hidden;
   }
 
-  .imagethree img {
-    width: 85%;
-    margin: 2%}
+  .main p{
+  display: block;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  }
+
+  .main h1{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+.main img{
+  display: block;
+  margin-left: 50%;
+  padding: 20px 20px;
+  width: 50%;
+  max-width: 550px;
+
+}
+#imageone {
+position: static;
+    width: 100%;
+    height: auto;
+}
+
+#imageone img {
+width: 80%;
+max-width: 600px;
+margin-left: -10%;
+  }
+
+#imagetwo{
+display: inline-block;
+    position: static;
+    width: 100%;
+}
+
+#imagetwo img{
+ width: 100%;
+    max-width: 800px;
+    margin-top: -25%;
+    margin-left: 50%;
+}
+
+}
+</style>
+
+
+
