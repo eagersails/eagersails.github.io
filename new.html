@@ -31,22 +31,23 @@
 <div class=content>
 <div class="slideshow-container">
 
-  <div class="mySlides fade">
+  <div class="mySlides fade" name="slider0">
+
     <img src="Images/dribble pocky.jpg" style="width:100%">
   </div>
-
-  <div class="mySlides fade">
+ 
+  <div class="mySlides fade" name="slider0">
     <img src="Images/yakult.jpg" style="width:100%">
   </div>
 
- <div class="mySlides fade">
+ <div class="mySlides fade" name="slider0">
     <img src="Images/dribble pocky.jpg" style="width:100%">
   </div>
 
 </div>
-<br>
+
 <div class="prevnext">
-<a class="prev" onclick="plusSlides(-1)">⇦</a>  <a class="next" onclick="plusSlides(1)">⇨</a></div>
+<a class="prev" onclick="plusSlides(-1,0)">⇦</a>  <a class="next" onclick="plusSlides(1,0)">⇨</a></div>
 
 </div>
 
@@ -64,7 +65,26 @@
 
 
 <div class=content>
-<img src="Images/hkphoto.jpg">
+
+<div class="slideshow-container">
+
+<div class="mySlides2 fade" name="slider1">
+<img src="Images/hkphoto.jpg" style="width:100%">
+</div>
+
+<div class="mySlides2 fade" name="slider1">
+<img src="Photography/edae.jpg" style="width:100%">
+</div>
+
+<div class="mySlides2 fade" name="slider1">
+<img src="Photography/hankang.jpg" style="width:100%">
+</div>
+
+
+</div>
+
+<div class="prevnext">
+<a class="prev" onclick="plusSlides(-1,1)">⇦</a>  <a class="next" onclick="plusSlides(1,1)">⇨</a></div>
 </div>
 
 <div class=description>
@@ -267,6 +287,8 @@ img {vertical-align: middle;}
   overflow: hidden;
 }
 
+
+
 /* Next & previous buttons */
 
 .prevnext
@@ -323,30 +345,56 @@ text-align: center;
 
 
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = new Array(2);
+slideIndex[0]=1;
+slideIndex[1]=1;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(1, 0);  
+showSlides(1, 1);
+
+
+function plusSlides(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = slideIndex[slideshownumber] + n; 
+  showSlides( slideIndex[slideshownumber], slideshownumber );
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = n;
+  showSlides(slideIndex[slideshownumber], slideshownumber);
 }
 
-function showSlides(n) {
+function showSlides(n, slideshownumber) 
+{
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+  var slideshowname = "slider" + slideshownumber;
+  var slides = document.getElementsByName(slideshowname);
+   var dotname = "dot" + slideshownumber;
+  var dots = document.getElementsByName(dotname);
+
+  if (n > slides.length) 
+  {
+      slideIndex[slideshownumber] = 1;
   }
+
+  if (n < 1) 
+  {
+      slideIndex[slideshownumber] = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";
+  }
+
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+
+  slides[slideIndex[slideshownumber]-1].style.display = "block";
+  dots[slideIndex[slideshownumber]-1].className += " active";
+} 
+
 </script>
+
