@@ -1,45 +1,329 @@
+
+
 <!doctype html/css>
 <html>
-<link rel='stylesheet' type='text/css' href='main.css'/>
-
-
 <body>
-<div id="container">
 
-  <link href="https://fonts.googleapis.com/css?family=Barlow|Inconsolata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow|Inconsolata" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="eagersails.github.io/garand-sticky-73b0fbe/jquery.sticky.js"></script>
   <script src="eagersails.github.io/dist/js/smooth-scroll.js"></script>
   <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <script src=”scripts.js”></script>
-
   <script>
     $(window).load(function(){
       $("#header").sticky({ topSpacing: 0 });
     });
   </script>
-
 <script>
   var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 
 
-
 <div id="header"><li><a href="http://eagersails.github.io/#about">About</a> <a href="http://eagersails.github.io/resume 10/17.pdf" download="Khanh Pham Resume">Resume</a> <a href="http://eagersails.github.io/#projects">Projects</a></li></div>
+
 
 <div id="sidebar-left"><li><a href="https://www.instagram.com/phamkhanh">Instagram</a> <a href="https://khanhvh.blogspot.com">Blog</a> <a href="mailto:khanhvhpham@gmail.com">email</a></li></div>
 
+<div class="container"><div class=content>
+  
+  <div class=description><h1><a href="girlboss.html">←</a> CAUSE USA</h1><p>In the summer of 2013 I had the wonderful opportunity to work at 501(c) nonprofit CAUSE USA whose work focuses on empowering Asian Americans. There, I worked directly under the Director of Communications and had the opportunity to dive into the world of marketing and communications. I designed pamphlets, help run events such as the Women in Power conference (feature Kamala Harris as a speaker that year!), the Leadership Academy internship program, did press outreach, and even helped repaint the CAUSE Office.</p><br><br></div>
 
-<div class=imageone><img src="Images/Women In Power 2013.png" alt="Avatar" class="image"><div class=description><h1>CAUSE USA</h1><p>In the summer of 2013 I had the wonderful opportunity to work at 501(c) nonprofit CAUSE USA whose work focuses on empowering Asian Americans. There, I worked directly under the Director of Communications and had the opportunity to dive into the world of marketing and communications. I designed pamphlets, help run events such as the Women in Power conference (feature Kamala Harris as a speaker that year!), did press outreach, and even helped repaint the CAUSE Office :)</p><br><br>
-<div class="overlay"><div class="text">Women in Power</div></div></div>
-
-<div class=imagetwo><img src="Images/leadershipacademy.png" alt="Avatar" class="image">
-<div class="overlay"><div class="text2">Leadership Academy<br></div></div></div>
-
+<center><img src="Images/Women In Power 2013.png" alt="Avatar" class="image"><img src="Images/leadershipacademy.png" alt="Avatar" class="image"></center>
 
 
 <center><div class=imagethree><iframe width="800" height="500" src="https://www.youtube.com/embed/G_IpKKtEnjs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div></center>
+
+
+</div></div>
+
+</html>
+
+
+
+
+<Style>
+/**General**/ 
+
+body {
+  background-color: white;
+   border: 25px solid #fee4dd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+
+ }
+
+
+#container{
+display: block;
+    width: 100%;
+    max-width: 1330px;
+    margin-top: 5%;
+    padding: 2% 2%;
+
+}
+
+.content{
+  display: block;
+  overflow: hidden;
+  margin: 5% 5% 5% 5%;
+}
+
+.content img{
+  display:inline;
+  width: 60%;
+  max-width: 600px;
+  margin: 5% auto;
+}
+
+
+.description{
+display: block;
+width: 100%;
+
+}
+
+.description h1{
+    font-family: Harbour;
+    text-align: center;
+    font-size: 40px;
+    -webkit-text-stroke: 1.5px #2024c9;
+    color: transparent;
+    margin-bottom: 1%;
+    word-spacing: 20;
+}
+
+
+.description a{
+
+    -webkit-text-stroke: 1.5px #2024c9;
+    color: white;
+text-transform: none;
+text-decoration: none;
+}
+
+.description a:hover {
+    color: #2024c9;
+}
+
+.description p{
+text-align: center;
+margin: 0 auto;
+font-family: 'Barlow', sans-serif;
+font-size: 12px; 
+max-width: 500px;
+padding: 5% 5%;
+}
+
+
+
+ /**Header and Navigation**/ 
+#header{
+background: #fee4dd;
+  color: #2024c9;
+  z-index: 999;
+  font-size:20px;
+  word-spacing: 50px;
+  text-align:center;
+font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  height: 0;
+  padding: 15px 0px 5px 0px;
+}
+
+#header li{
+  background: transparent;
+  display: inline;
+    z-index: 999;
+
+}
+
+#header a:active, 
+#header a:link, #header a:visited, #header a:hover {  
+  color: #2024c9;
+  text-decoration: none;
+  display:inline;
+}
+
+/*Sidebar*/
+
+#sidebar-left {
+float: left; 
+width: 2.5%;
+top: 63%;
+left: 2%;
+position: fixed;
+z-index: 2;
+word-spacing: 25px
+}
+
+#sidebar-left li{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-transform: lowercase;
+    display: block;
+    line-height: 1.4em;
+    white-space: nowrap;  
+font-family: 'Josefin Sans', sans-serif;  
+  font-size: 15px;
+
+}
+
+#sidebar-left a{
+
+  font-size: 15px;
+  color:  #2024c9;
+  text-transform: none;
+  text-decoration: none;
+
+}
+
+
+/*SLIDESHOW*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: 5% auto;
+}
+
+
+.slideshow-container img{ 
+  border: 1px solid grey;
+ }
+
+
+/* Next & previous buttons */
+
+.prevnext
+{
+text-align: center;
+  width: 100%;
+
+
+}
+.prev, .next {
+  font-family: harbour;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  margin-right: 20%;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</Style>
+
+
+<script>
+var slideIndex = new Array(3);
+slideIndex[0]=1;
+slideIndex[1]=1;
+slideIndex[2]=1;
+
+
+showSlides(-1, 0);  
+showSlides(-1, 1);
+showSlides(-1, 2);
+
+
+function plusSlides(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = slideIndex[slideshownumber] + n; 
+  showSlides( slideIndex[slideshownumber], slideshownumber );
+}
+
+function currentSlide(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = n;
+  showSlides(slideIndex[slideshownumber], slideshownumber);
+}
+
+function showSlides(n, slideshownumber) 
+{
+  var i;
+  var slideshowname = "slider" + slideshownumber;
+  var slides = document.getElementsByName(slideshowname);
+   var dotname = "dot" + slideshownumber;
+  var dots = document.getElementsByName(dotname);
+
+  if (n > slides.length) 
+  {
+      slideIndex[slideshownumber] = 1;
+  }
+
+  if (n < 1) 
+  {
+      slideIndex[slideshownumber] = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex[slideshownumber]-1].style.display = "block";
+  dots[slideIndex[slideshownumber]-1].className += "active";
+} 
+
+</script>
+
+
+
+
+
+
+
 
 
 
