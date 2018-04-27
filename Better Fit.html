@@ -4,7 +4,7 @@
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Barlow|Inconsolata" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=BioRhyme:200|Domine|Martel:300,400|Playfair+Display|Scope+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
@@ -34,28 +34,29 @@
 
 
 
-<div id="header"><li><a href="http://eagersails.github.io/Pham, Khanh Resume .pdf">Resume</a> <a href="pham-khanh.com/#container">Projects</a></li></div>
+<div id="header"><li><a href="http://eagersails.github.io/Pham, Khanh Resume .pdf">Resume</a> <a href="http://pham-khanh.com/#container">Projects</a></li></div>
 
 
 
 <div class="container"><div class=content>
 <div class=description>
-<h1>Tackling E-commerce's Biggest Challenge by Helping Users help Users </h1><br>
-<br><p>
-  At Macy's.com one of the biggest challenges facing customers and the business was fit. How can we help customers understand how clothing will fit and flatter them before they make the purchase so that customers 1) feel confident enough to purchase and 2) feel good when the item come, ultimately helping our bottom line by 3) reducing OpEx costs associated with processing returns.<br> 
+<h1>Tackling E-commerce's Biggest Challenge by Helping Users help Users </h1><p>
+  At Macy's.com one of the biggest challenges facing customers and the business was fit. How can we help customers understand how clothing will fit and flatter them before they make the purchase so that customers feel confident enough to purchase and feel good when the item come?<br><br>
   Our team concluded through research and testing that one of <b>the main ways shoppers determined fit was through advice from other shoppers.</b></p>
 
 
 <h1>User Research</h1><img src="Images/Customer Feedback.png" data-aos="fade-up">
 <p> From customer research conducted via on-site interviews and through a remote survey, we learned:<br><br>1) Size charts are only useful for customers who know their measurements well. Other customers use different signals such as reviews, images and manufacturer details.<br><br>2) Size/fit was a common problem across all categories, not just apparel<br><br>3)Users are well equipped to using different tools on the site to get what information they need, but it does have some cognitive load impact because there are so many different tools.</p>
+<h1>Mental Model Mapping</h1>
 <p>From there, also analyzed different user mental models while shopping with fit in mind. We created different user flows that clarified goals, motivation for the goals, and tools used to achieve goals.</p>
 
 <img src="Images/mental model.png" data-aos="fade-up">
 <br><br>
+<h1>Information Sorting</h1>
 <img src="Images/Tools.png" data-aos="fade-up"><br><br>
 <p>We broke down the different user flows into key personas and mapped them to how they would want to recieve size and fit information onto an axis of flattery:size and prescriptive:descriptive. Then, we identified that we were lacking in flattery and prescriptive information.</p>
 <div class=description>
-<h1>Approach & Challenges</h1><img src="Images/betterfit.png" data-aos="fade-up"><p>I can't share too much of the end project as its currently being developed, but essentially we chose to focus on "other shoppers" as the tool to capture flattery, size & fit prescriptive and descriptive info. Ultimately, we were able to create high fidelity prototypes (in a 1 week period!) and put it in front of users to garner really positive feedback prior to development</p><br>
+<h1>Prototype</h1><img src="Images/betterfit.png" data-aos="fade-up"><p>I can't share too much of the end project as its currently being developed, but essentially we chose to focus on "other shoppers" as the tool to capture flattery, size & fit prescriptive and descriptive info. Ultimately, we were able to create high fidelity prototypes (in a 1 week period!) and put it in front of users to garner really positive feedback prior to development</p><br>
   <h1>User Feedback</h1> <p>One customer said “I love it, I would totally use it. I would probably shop here more if you guys have it." And another pointed out that our way of gathering information from customers (which we figured would be a drag) was easy to fill and asked the right amount of information.
 </p></div>
 
@@ -72,7 +73,7 @@
 
 body {
   background-color: white;
-   border: 25px solid #fee4dd;
+   border: 25px solid #9a0e0e;
     position: absolute;
     top: 0;
     right: 0;
@@ -98,30 +99,32 @@ display: block;
 }
 
 .content img{
-  display:block;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+ display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2% 2% 2% 2%;
 }
 
 
 .description{
 display: block;
 width: 100%;
+margin: 0 auto;
 
 }
 
 .description h1{
-    font-family: Harbour;
-    text-align: center;
-    font-size: 40px;
-    -webkit-text-stroke: 1.5px #2024c9;
-    color: transparent;
-    max-width: 900px;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: left;
+    /* border-bottom: black 1px solid; */
+    font-size: 18px;
+    color: #2024c9;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
-
-
-}
+    margin-bottom: 7%;
+  }
 
 
 .description a{
@@ -137,11 +140,12 @@ text-decoration: none;
 }
 
 .description p{
-margin: 0 auto;
-font-family: 'Playfair Display', serif;
-font-size: 14px; 
-max-width: 600px;
-padding: 3%;
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 12px;
+    max-width: 600px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 
