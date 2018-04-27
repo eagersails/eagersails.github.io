@@ -73,7 +73,7 @@
 </div>
 
 <div class="content" data-aos="fade-up">
-<img src="Images/leadershipacademy.png"><br> <h1><a href="/girlboss.html">Brand / Marketing</a></h1>
+<img src="Images/leadershipacademy copy.png"><br> <h1><a href="/girlboss.html">Brand / Marketing</a></h1>
 
 </div>
 
@@ -81,7 +81,7 @@
 
 
 <div class="content" data-aos="fade-up">
-<img src="Images/lowbrow cover.jpg"><br><h1><a href="lowbrowissue1.html">Low Brow 01</a></h1>
+<img src="Images/lowbrowcover.png"><br><h1><a href="lowbrowissue1.html">Low Brow 01</a></h1>
 
 </div>
 
@@ -254,9 +254,11 @@ padding: 2% 2%;
  /**Header and Navigation**/ 
 #header{
 background: transparent;
-  color: #2024c9;
+color: transparent;
+-webkit-text-stroke: .8px #2024c9;
+;
   z-index: 999;
-  font-size:12px;
+  font-size:25px;
   word-spacing: 40px;
   text-align:right;
 font-family: 'Josefin Sans', sans-serif;
@@ -272,12 +274,15 @@ font-family: 'Josefin Sans', sans-serif;
 
 }
 
-#header a:active, 
-#header a:link, #header a:visited, #header a:hover {  
-  color: #2024c9;
+#header a:active, #header a:link, #header a:visited{
+color:transparent; 
+-webkit-text-stroke: .8px #2024c9;
   text-decoration: none;
   display:inline;
 }
+
+#header a:hover { 
+	color:#2024c9;}
 
 /*Sidebar*/
 
@@ -355,7 +360,7 @@ img {vertical-align: middle;}
 	z-index: -1;
   max-width: 100%;
   position: relative;
-  max-height:440px;
+  max-height:600px;
   overflow: hidden;
 }
 

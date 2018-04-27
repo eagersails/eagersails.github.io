@@ -153,9 +153,11 @@ text-decoration: none;
  /**Header and Navigation**/ 
 #header{
 background: transparent;
-  color: #2024c9;
+color: transparent;
+-webkit-text-stroke: .8px #2024c9;
+;
   z-index: 999;
-  font-size:12px;
+  font-size:25px;
   word-spacing: 40px;
   text-align:right;
 font-family: 'Josefin Sans', sans-serif;
@@ -171,13 +173,15 @@ font-family: 'Josefin Sans', sans-serif;
 
 }
 
-#header a:active, 
-#header a:link, #header a:visited, #header a:hover {  
-  color: #2024c9;
+#header a:active, #header a:link, #header a:visited{
+color:transparent; 
+-webkit-text-stroke: .8px #2024c9;
   text-decoration: none;
   display:inline;
 }
 
+#header a:hover { 
+  color:#2024c9;}
 /*Sidebar*/
 
 #sidebar-left {
