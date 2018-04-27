@@ -1,5 +1,7 @@
 <!doctype html/css>
 <html>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <body>
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -141,7 +143,6 @@ body {
 
  }
 
-
 #container{
 display: inline-grid;
     grid-template-columns: 50% 50%;
@@ -153,7 +154,8 @@ display: inline-grid;
 padding-right: 5%;
 }
 
-@media only screen and (max-width: 500px) 
+@media only screen and (max-width: 500px)
+
 {
 	#container{
 	display: inline-grid;
@@ -165,8 +167,6 @@ padding-right: 5%;
 
 	}
 }
-
-
 .content{
 	display: block;
     padding: 10px 10px 10px 10px;
@@ -267,6 +267,15 @@ font-family: 'Josefin Sans', sans-serif;
   padding: 15px 10px 5px 0px;
 }
 
+@media only screen and (max-width: 500px)
+
+{
+	#header{
+	text-align: center;
+
+	}
+}
+
 #header li{
 	background: transparent;
   display: inline;
@@ -340,6 +349,16 @@ font-family:'Playfair Display', serif ;
   color: black;
   margin-left: 10%;
 
+}
+
+
+@media only screen and (max-width: 500px)
+
+{
+	#about p{
+		margin: 0 auto;
+
+	}
 }
 
 #about a:link, #about a:visited, #about a:hover, #about a:active{ 
