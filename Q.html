@@ -1,0 +1,354 @@
+<!doctype html/css>
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Barlow|Inconsolata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=BioRhyme:200|Domine|Martel:300,400|Playfair+Display|Scope+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="eagersails.github.io/garand-sticky-73b0fbe/jquery.sticky.js"></script>
+  <script src="eagersails.github.io/dist/js/smooth-scroll.js"></script>
+  <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src=”scripts.js”></script>
+  <script>
+    $(window).load(function(){
+      $("#header").sticky({ topSpacing: 0 });
+    });
+  </script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+
+</script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  </script>
+
+
+
+
+<div id="header"><li>1/2<a href="CAUSE USA.html">→</a> <a href="http://eagersails.github.io/Pham, Khanh Resume .pdf">Resume</a> <a href="http://pham-khanh.com/#container">Projects</a></li></div>
+
+
+<div class="container"><div class=content>
+<div class="description"><br>
+<h1>Q!</h1>
+<p>A mobile application that lets you share music with friends in a collaborative playlist. Q! shares music on one streamlined platform  through Bluetooth.
+</p></div>
+<img src="Images/qflows.jpg" data-aos="fade-up">
+
+
+</div></div>
+
+</body>
+</html>
+
+
+
+
+<Style>
+/**General**/ 
+
+body {
+  background-color: white;
+   border: 25px solid #fee4dd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+
+ }
+
+
+#container{
+display: block;
+    width: 100%;
+    max-width: 1330px;
+    margin-top: 5%;
+    padding: 2% 2%;
+
+}
+
+.content{
+  display: block;
+  overflow: hidden;
+  margin: 5% 5% 5% 5%;
+}
+
+.content img{
+ display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2% 2% 2% 2%;
+}
+
+
+.description{
+display: block;
+width: 100%;
+margin: 0 auto;
+
+}
+
+.description h1{
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: left;
+    /* border-bottom: black 1px solid; */
+    font-size: 18px;
+    color: #2024c9;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+
+.description a{
+
+    -webkit-text-stroke: 1.5px #2024c9;
+    color: white;
+text-transform: none;
+text-decoration: none;
+}
+
+.description a:hover {
+    color: #2024c9;
+}
+
+.description p{
+    margin: 0 auto;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 12px;
+    max-width: 600px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
+
+ /**Header and Navigation**/ 
+#header{
+background: transparent;
+color: transparent;
+-webkit-text-stroke: .8px #2024c9;
+;
+  z-index: 999;
+  font-size:25px;
+  word-spacing: 40px;
+  text-align:right;
+font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  height: 0;
+  padding: 15px 10px 5px 0px;
+}
+
+#header li{
+  background: transparent;
+  display: inline;
+  z-index: 999;
+
+}
+
+#header a:active, #header a:link, #header a:visited{
+color:transparent; 
+-webkit-text-stroke: .8px #2024c9;
+  text-decoration: none;
+  display:inline;
+}
+
+
+#header a:hover {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+/*Sidebar*/
+
+#sidebar-left {
+float: left; 
+width: 2.5%;
+top: 63%;
+left: 2%;
+position: fixed;
+z-index: 2;
+word-spacing: 25px
+}
+
+#sidebar-left li{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-transform: lowercase;
+    display: block;
+    line-height: 1.4em;
+    white-space: nowrap;  
+font-family: 'Josefin Sans', sans-serif;  
+  font-size: 15px;
+
+}
+
+#sidebar-left a{
+
+  font-size: 15px;
+  color:  #2024c9;
+  text-transform: none;
+  text-decoration: none;
+
+}
+
+
+/*SLIDESHOW*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: 5% auto;
+}
+
+
+.slideshow-container img{ 
+  border: 1px solid grey;
+  z-index: -1;
+ }
+
+
+/* Next & previous buttons */
+
+.prevnext
+{
+text-align: center;
+  width: 100%;
+
+
+}
+.prev, .next {
+  font-family: harbour;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  margin-right: 20%;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</Style>
+
+
+<script>
+var slideIndex = new Array(3);
+slideIndex[0]=1;
+slideIndex[1]=1;
+slideIndex[2]=1;
+
+
+showSlides(-1, 0);  
+showSlides(-1, 1);
+showSlides(-1, 2);
+
+
+function plusSlides(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = slideIndex[slideshownumber] + n; 
+  showSlides( slideIndex[slideshownumber], slideshownumber );
+}
+
+function currentSlide(n, slideshownumber) 
+{
+  slideIndex[slideshownumber] = n;
+  showSlides(slideIndex[slideshownumber], slideshownumber);
+}
+
+function showSlides(n, slideshownumber) 
+{
+  var i;
+  var slideshowname = "slider" + slideshownumber;
+  var slides = document.getElementsByName(slideshowname);
+   var dotname = "dot" + slideshownumber;
+  var dots = document.getElementsByName(dotname);
+
+  if (n > slides.length) 
+  {
+      slideIndex[slideshownumber] = 1;
+  }
+
+  if (n < 1) 
+  {
+      slideIndex[slideshownumber] = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) 
+  {
+      slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex[slideshownumber]-1].style.display = "block";
+  dots[slideIndex[slideshownumber]-1].className += "active";
+} 
+
+</script>
+
+
+
+
+
+
+
